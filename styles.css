@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+html, body {
+    font-family: 'Outfit', sans-serif;
+    background-color: hsl(217, 54%, 11%);
+    font-size: 18px;
+    color: hsl(215, 51%, 70%);
+}
+
+.container {
+    width: 375px;
+    margin: 50px auto;
+    border-radius: 10px;
+    background-color: hsl(216, 50%, 16%);
+    padding: 2em;
+}
+
+.img-container {
+    position: relative;
+    width: 100%; 
+}
+
+.header-img {
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* height: 50%;
+    width: 50%; */
+    opacity: 0;
+    transition: .3s ease;
+    background-color: rgba(0,255,247,0.5);
+}
+
+.img-container:hover .overlay {
+    opacity: 1;
+  }
+
+.icon {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    width: 50px;
+}
+
+
+
+h1 {
+    color: #fff;
+    margin-top: 1.2em;
+}
+
+.subtitle {
+    margin-top: 1em;
+    line-height: 1.5;
+    font-size: 1.1em;
+}
+
+.sell,
+.price,
+.duration {
+    display: flex;
+}
+
+.sell {
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5em 0;
+}
+
+.price {
+    color: hsl(178, 100%, 50%);
+    align-items: center;
+}
+
+.price img,
+.duration img {
+    width: 15px;
+    display: block;
+    margin-right: 8px;
+}
+
+.duration {
+    align-items: center;
+}
+
+.creator {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid hsl(215, 32%, 27%);
+    padding-top: 1.5em;
+}
+
+.avatar {
+    width: 50px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.creator-name {
+    color: #fff;
+}
+
+h1:hover,
+.creator-name:hover {
+    color: rgba(0,255,247,1);
+    cursor: pointer;
+}
